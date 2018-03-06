@@ -30,16 +30,6 @@ class StringToolkit(object):
         UniqueCharsString = ''.join(UniqueCharsSet)                                #Return the unique characters as a string
         return (UniqueCharsSet, UniqueCharsString)
 
-    #def RandomGapGenerator(self): 
-    #    """ Generate two random numbers between 0 and max string length 
-    #    using returned values of member function (same class) StringCount """
-    #    RandomNumbers = sorted(random.sample(range(0,self.StringCount()), 2))   #Generate random numbers and sort numberically
-    #    return (RandomNumbers[0], RandomNumbers[1])
-    #    GapLength = RandomNumbers[1] - RandomNumbers[0]                         #Store distance between start and stop coordinates in variable
-    #    UniqueCharsString = (self.UniqueChars())[1]
-    #    ReplacementChunk = ''.join(random.choice(UniqueCharsString) for i in range(GapLength))
-    #    return (RandomNumbers[0], RandomNumbers[1], GapLength, ReplacementChunk)
-
     def CharacterFrequency(self):
         """ Return the frequency of each character in input string """
         CharDict = dict()
